@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>eCommerce Dashboard</title>
-    @vite(['public/tailadmin/build/style.css', 'resources/js/app.js'])
+    @vite(['public/tailadmin/build/style.css', 'public/tailadmin/src/js/index.js'])
 </head>
 <body
     x-data="{ page: 'ecommerce', loaded: true, darkMode: false, stickyMenu: false, sidebarToggle: false, scrollTop: false }"

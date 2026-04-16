@@ -6,8 +6,9 @@
         "build": "vite build"
     },
     "devDependencies": {
+        "@tailwindcss/postcss": "^4.2.2",
         "alpinejs": "^3.15.11",
-        "autoprefixer": "^10.4.27",
+        "autoprefixer": "^10.5.0",
         "axios": "^1.6.4",
         "laravel-vite-plugin": "^1.0.0",
         "postcss": "^8.5.9",
@@ -19,6 +20,7 @@
         "@fullcalendar/daygrid": "^6.1.20",
         "@fullcalendar/interaction": "^6.1.20",
         "@fullcalendar/timegrid": "^6.1.20",
+        "@tailwindcss/vite": "^4.2.2",
         "apexcharts": "^5.10.6",
         "flatpickr": "^4.6.13",
         "jsvectormap": "^1.7.0",

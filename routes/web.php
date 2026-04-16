@@ -16,3 +16,15 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('dashboard/index');
 });
+
+Route::get('/signin', function () {
+    return view('sign.sign-in');
+});
+
+Route::get('/daftar-barang', function () {
+    return view('dashboard.daftar-barang');
+});
+
+Route::get('/profiles', function () {
+    return view('dashboard.profiles');
+});

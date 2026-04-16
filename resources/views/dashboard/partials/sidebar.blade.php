@@ -106,16 +106,25 @@
                 class="flex flex-col gap-1 mt-2 menu-dropdown pl-9">
                 <li>
                   <a
-                    href="index.html"
+                    href="#"
                     class="menu-dropdown-item group"
-                    :class="page === 'ecommerce' ? 'menu-dropdown-item-active' : 'menu-dropdown-item-inactive'">
-                    eCommerce
+                    :class="page === 'ecommerce' ? 'menu-dropdown-item-active' : 'menu-dropdown-item-inactive'" @click="page = 'ecommerce'">
+                    Daftar List Barang
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="menu-dropdown-item group"
+                    :class="page === 'pengajuan' ? 'menu-dropdown-item-active' : 'menu-dropdown-item-inactive'" @click="page = 'pengajuan'">
+                    Daftar Pengajuan
                   </a>
                 </li>
               </ul>
             </div>
             <!-- Dropdown Menu End -->
           </li>
+
           <!-- Menu Item Dashboard -->
 
           <!-- Menu Item Calendar -->
@@ -172,7 +181,7 @@
               <span
                 class="menu-item-text"
                 :class="sidebarToggle ? 'lg:hidden' : ''">
-                User Profile
+                Akun Pengguna
               </span>
             </a>
           </li>
