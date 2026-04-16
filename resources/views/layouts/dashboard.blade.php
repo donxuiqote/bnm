@@ -13,12 +13,12 @@
         $watch('darkMode', value => localStorage.setItem('darkMode', JSON.stringify(value)))
     "
     :class="{ 'dark bg-gray-900': darkMode === true }">
-    @include('dashboard.partials.preloader')
+    @include('admin.partials.preloader')
     <div class="flex h-screen overflow-hidden">
-        @include('dashboard.partials.sidebar')
+        @include('admin.partials.sidebar')
         <div class="relative flex flex-col flex-1 overflow-x-hidden overflow-y-auto">
-            @include('dashboard.partials.overlay')
-            @include('dashboard.partials.header')
+            @include('admin.partials.overlay')
+            @include('admin.partials.header')
             <main>
                 <div class="p-4 mx-auto max-w-7xl md:p-6">
                 @yield('content')

@@ -85,7 +85,7 @@
           <!-- Menu Item Profile -->
           <li>
             <a
-              href="profile.html"
+              href="/daftar-barang"
               @click="selected = (selected === 'Profile' ? '':'Profile')"
               class="menu-item group"
               :class=" (selected === 'Profile') && (page === 'profile') ? 'menu-item-active' : 'menu-item-inactive'">

@@ -12,19 +12,26 @@ use Illuminate\Support\Facades\Route;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
-
-Route::get('/', function () {
-    return view('dashboard/index');
-});
-
 Route::get('/signin', function () {
     return view('sign.sign-in');
 });
 
-Route::get('/daftar-barang', function () {
-    return view('dashboard.daftar-barang');
+Route::get('/', function () {
+    return view('admin.index');
 });
 
-Route::get('/profiles', function () {
-    return view('dashboard.profiles');
+Route::get('/manajemen-akun', function () {
+    return view('admin.manajemen-akun');
+});
+
+Route::get('/tambah-akun', function () {
+    return view('admin.tambah-akun');
+});
+
+Route::get('/daftar-barang', function () {
+    return view('admin.daftar-barang');
+});
+
+Route::get('/pengajuan-barang', function () {
+    return view('admin.pengajuan-barang');
 });

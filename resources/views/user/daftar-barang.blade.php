@@ -8,7 +8,7 @@
             <div class="flex flex-col gap-2 mb-4 sm:flex-row sm:items-center sm:justify-between">
                 <div>
                     <h3 class="text-lg font-semibold text-gray-800 dark:text-white/90">
-                        Recent Orders
+                        Data Barang
                     </h3>
                 </div>
                 <div class="flex items-center gap-3">
@@ -47,7 +47,7 @@
                                 <div class="flex items-center">
                                     <p
                                         class="font-medium text-gray-500 text-theme-xs dark:text-gray-400">
-                                        User
+                                        Nama Barang
                                     </p>
                                 </div>
                             </th>
@@ -55,7 +55,7 @@
                                 <div class="flex items-center">
                                     <p
                                         class="font-medium text-gray-500 text-theme-xs dark:text-gray-400">
-                                        Project Name
+                                        Kode Barang
                                     </p>
                                 </div>
                             </th>
@@ -71,7 +71,7 @@
                                 <div class="flex items-center">
                                     <p
                                         class="font-medium text-gray-500 text-theme-xs dark:text-gray-400">
-                                        Status
+                                        Kategori Barang
                                     </p>
                                 </div>
                             </th>
@@ -79,7 +79,7 @@
                                 <div class="flex items-center">
                                     <p
                                         class="font-medium text-gray-500 text-theme-xs dark:text-gray-400">
-                                        Budget
+                                        Jumlah Stok Barang
                                     </p>
                                 </div>
                             </th>
@@ -93,7 +93,7 @@
                                 <div class="flex items-center">
                                     <div class="flex items-center gap-3">
                                         <div class="w-10 h-10 overflow-hidden rounded-full">
-                                            <img src="./images/user/user-17.jpg" alt="brand" />
+                                            <img src="https://picsum.photos/id/1/200/300" alt="brand" />
                                         </div>
 
                                         <div>
@@ -153,7 +153,7 @@
                                 <div class="flex items-center">
                                     <div class="flex items-center gap-3">
                                         <div class="w-10 h-10 overflow-hidden rounded-full">
-                                            <img src="./images/user/user-18.jpg" alt="brand" />
+                                            <img src="https://picsum.photos/id/2/200/300" alt="brand" />
                                         </div>
 
                                         <div>
@@ -211,7 +211,7 @@
                                 <div class="flex items-center">
                                     <div class="flex items-center gap-3">
                                         <div class="w-10 h-10 overflow-hidden rounded-full">
-                                            <img src="./images/user/user-19.jpg" alt="brand" />
+                                            <img src="https://picsum.photos/id/3/200/300" alt="brand" />
                                         </div>
 
                                         <div>
@@ -257,126 +257,6 @@
                                     <p class="text-gray-500 text-theme-sm dark:text-gray-400">
                                         12.7K
                                     </p>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="px-5 py-4 sm:px-6">
-                                <div class="flex items-center">
-                                    <div class="flex items-center gap-3">
-                                        <div class="w-10 h-10 overflow-hidden rounded-full">
-                                            <img src="./images/user/user-20.jpg" alt="brand" />
-                                        </div>
-
-                                        <div>
-                                            <span
-                                                class="block font-medium text-gray-800 text-theme-sm dark:text-white/90">
-                                                Abram Schleifer
-                                            </span>
-                                            <span
-                                                class="block text-gray-500 text-theme-xs dark:text-gray-400">
-                                                Digital Marketer
-                                            </span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </td>
-                            <td class="px-5 py-4 sm:px-6">
-                                <div class="flex items-center">
-                                    <p class="text-gray-500 text-theme-sm dark:text-gray-400">
-                                        Social Media
-                                    </p>
-                                </div>
-                            </td>
-                            <td class="px-5 py-4 sm:px-6">
-                                <div class="flex items-center">
-                                    <div class="flex -space-x-2">
-                                        <div
-                                            class="w-6 h-6 overflow-hidden border-2 border-white rounded-full dark:border-gray-900">
-                                            <img src="./images/user/user-28.jpg" alt="user" />
-                                        </div>
-                                        <div
-                                            class="w-6 h-6 overflow-hidden border-2 border-white rounded-full dark:border-gray-900">
-                                            <img src="./images/user/user-29.jpg" alt="user" />
-                                        </div>
-                                        <div
-                                            class="w-6 h-6 overflow-hidden border-2 border-white rounded-full dark:border-gray-900">
-                                            <img src="./images/user/user-30.jpg" alt="user" />
-                                        </div>
-                                    </div>
-                                </div>
-                            </td>
-                            <td class="px-5 py-4 sm:px-6">
-                                <div class="flex items-center">
-                                    <p
-                                        class="rounded-full bg-error-50 px-2 py-0.5 text-theme-xs font-medium text-error-700 dark:bg-error-500/15 dark:text-error-500">
-                                        Cancel
-                                    </p>
-                                </div>
-                            </td>
-                            <td class="px-5 py-4 sm:px-6">
-                                <div class="flex items-center">
-                                    <p class="text-gray-500 text-theme-sm dark:text-gray-400">2.8K</p>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="px-5 py-4 sm:px-6">
-                                <div class="flex items-center">
-                                    <div class="flex items-center gap-3">
-                                        <div class="w-10 h-10 overflow-hidden rounded-full">
-                                            <img src="./images/user/user-21.jpg" alt="brand" />
-                                        </div>
-
-                                        <div>
-                                            <span
-                                                class="block font-medium text-gray-800 text-theme-sm dark:text-white/90">
-                                                Carla George
-                                            </span>
-                                            <span
-                                                class="block text-gray-500 text-theme-xs dark:text-gray-400">
-                                                Front-end Developer
-                                            </span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </td>
-                            <td class="px-5 py-4 sm:px-6">
-                                <div class="flex items-center">
-                                    <p class="text-gray-500 text-theme-sm dark:text-gray-400">
-                                        Website
-                                    </p>
-                                </div>
-                            </td>
-                            <td class="px-5 py-4 sm:px-6">
-                                <div class="flex items-center">
-                                    <div class="flex -space-x-2">
-                                        <div
-                                            class="w-6 h-6 overflow-hidden border-2 border-white rounded-full dark:border-gray-900">
-                                            <img src="./images/user/user-31.jpg" alt="user" />
-                                        </div>
-                                        <div
-                                            class="w-6 h-6 overflow-hidden border-2 border-white rounded-full dark:border-gray-900">
-                                            <img src="./images/user/user-32.jpg" alt="user" />
-                                        </div>
-                                        <div
-                                            class="w-6 h-6 overflow-hidden border-2 border-white rounded-full dark:border-gray-900">
-                                            <img src="./images/user/user-33.jpg" alt="user" />
-                                        </div>
-                                    </div>
-                                </div>
-                            </td>
-                            <td class="px-5 py-4 sm:px-6">
-                                <div class="flex items-center">
-                                    <p
-                                        class="rounded-full bg-success-50 px-2 py-0.5 text-theme-xs font-medium text-success-700 dark:bg-success-500/15 dark:text-success-500">
-                                        Active
-                                    </p>
-                                </div>
-                            </td>
-                            <td class="px-5 py-4 sm:px-6">
-                                <div class="flex items-center">
-                                    <p class="text-gray-500 text-theme-sm dark:text-gray-400">4,5K</p>
                                 </div>
                             </td>
                         </tr>
