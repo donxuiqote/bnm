@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Manajemen Pengguna - Admin</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body class="bg-gray-50 text-gray-800">
+    <div class="min-h-screen">
+      <header class="border-b border-gray-200 bg-white sticky top-0 z-30">
+        <div class="mx-auto flex max-w-7xl items-center justify-between gap-4 px-4 py-4 sm:px-6 lg:px-8">
+          <div>
+            <p class="text-sm text-blue-600 font-medium">Admin Panel</p>
+            <h1 class="text-2xl font-bold text-gray-900">Manajemen Pengguna</h1>
+          </div>
+          <div class="flex items-center gap-3">
+            <a href="profile.html" class="rounded-xl border border-gray-300 px-4 py-2 text-sm font-medium text-gray-700 hover:bg-gray-50">Profil Admin</a>
+            <a href="signin.html" class="rounded-xl bg-red-500 px-4 py-2 text-sm font-medium text-white hover:bg-red-600">Logout</a>
+          </div>
+        </div>
+      </header>
+
+      <main class="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
+        <div class="mb-6 grid gap-4 md:grid-cols-4">
+          <div class="rounded-2xl border border-gray-200 bg-white p-5 shadow-sm">
+            <p class="text-sm text-gray-500">Total User</p>
+            <p class="mt-2 text-3xl font-bold">30</p>
+          </div>
+          <div class="rounded-2xl border border-gray-200 bg-white p-5 shadow-sm">
+            <p class="text-sm text-gray-500">Divisi</p>
+            <p class="mt-2 text-3xl font-bold">6</p>
+          </div>
+          <div class="rounded-2xl border border-gray-200 bg-white p-5 shadow-sm">
+            <p class="text-sm text-gray-500">Remember Me</p>
+            <p class="mt-2 text-3xl font-bold">Aktif</p>
+          </div>
+          <div class="rounded-2xl border border-gray-200 bg-white p-5 shadow-sm">
+            <p class="text-sm text-gray-500">Auto Logout</p>
+            <p class="mt-2 text-3xl font-bold">30 Menit</p>
+          </div>
+        </div>
+
+        <div class="grid gap-6 xl:grid-cols-3">
+          <section class="xl:col-span-1 rounded-3xl border border-gray-200 bg-white shadow-sm">
+            <div class="border-b border-gray-200 px-6 py-5">
+              <h2 class="text-lg font-semibold text-gray-900">Form Tambah / Edit User</h2>
+            </div>
+
+            <form class="space-y-5 p-6">
+              <div>
+                <label class="mb-1.5 block text-sm font-medium text-gray-700">Nama Lengkap</label>
+                <input type="text" placeholder="Masukkan nama lengkap" class="h-12 w-full rounded-xl border border-gray-300 px-4 text-sm outline-none transition focus:border-blue-500 focus:ring-4 focus:ring-blue-100" />
+              </div>
+
+              <div>
+                <label class="mb-1.5 block text-sm font-medium text-gray-700">NIP / ID Pegawai</label>
+                <input type="text" placeholder="Masukkan NIP atau ID pegawai" class="h-12 w-full rounded-xl border border-gray-300 px-4 text-sm outline-none transition focus:border-blue-500 focus:ring-4 focus:ring-blue-100" />
+              </div>
+
+              <div>
+                <label class="mb-1.5 block text-sm font-medium text-gray-700">Bagian / Divisi</label>
+                <select class="h-12 w-full rounded-xl border border-gray-300 px-4 text-sm outline-none transition focus:border-blue-500 focus:ring-4 focus:ring-blue-100">
+                  <option value="">Pilih divisi</option>
+                  <option>Pusat Pengembangan & Penilaian Kompetensi</option>
+                  <option>Pusat Pelatihan</option>
+                  <option>Data & Sistem Informasi</option>
+                  <option>Umum / Pimpinan, Humas, & Protokol</option>
+                  <option>Umum / Rumah Tangga</option>
+                  <option>Umum / Keuangan</option>
+                  <option>Perencanaan & Kerja Sama</option>
+                </select>
+              </div>
+
+              <div>
+                <label class="mb-1.5 block text-sm font-medium text-gray-700">No. HP</label>
+                <input type="text" placeholder="08xxxxxxxxxx" class="h-12 w-full rounded-xl border border-gray-300 px-4 text-sm outline-none transition focus:border-blue-500 focus:ring-4 focus:ring-blue-100" />
+              </div>
+
+              <div>
+                <label class="mb-1.5 block text-sm font-medium text-gray-700">Email</label>
+                <input type="email" placeholder="nama@email.com" class="h-12 w-full rounded-xl border border-gray-300 px-4 text-sm outline-none transition focus:border-blue-500 focus:ring-4 focus:ring-blue-100" />
+              </div>
+
+              <div>
+                <label class="mb-1.5 block text-sm font-medium text-gray-700">Password</label>
+                <input type="password" placeholder="Minimal 8 karakter" class="h-12 w-full rounded-xl border border-gray-300 px-4 text-sm outline-none transition focus:border-blue-500 focus:ring-4 focus:ring-blue-100" />
+                <p class="mt-2 text-xs text-gray-500">Simpan password ke database dengan bcrypt, bukan MD5.</p>
+              </div>
+
+              <div class="grid gap-4 sm:grid-cols-2">
+                <label class="flex items-center gap-2 rounded-xl border border-gray-200 px-4 py-3 text-sm text-gray-700">
+                  <input type="checkbox" class="h-4 w-4 rounded border-gray-300 text-blue-600" checked />
+                  Remember me
+                </label>
+                <label class="flex items-center gap-2 rounded-xl border border-gray-200 px-4 py-3 text-sm text-gray-700">
+                  <input type="checkbox" class="h-4 w-4 rounded border-gray-300 text-blue-600" checked />
+                  Logout otomatis
+                </label>
+              </div>
+
+              <div class="grid gap-3 sm:grid-cols-2">
+                <button type="button" class="h-12 rounded-xl bg-blue-600 text-sm font-semibold text-white hover:bg-blue-700">Simpan User</button>
+                <button type="reset" class="h-12 rounded-xl border border-gray-300 text-sm font-semibold text-gray-700 hover:bg-gray-50">Reset</button>
+              </div>
+            </form>
+          </section>
+
+          <section class="xl:col-span-2 rounded-3xl border border-gray-200 bg-white shadow-sm">
+            <div class="flex flex-col gap-4 border-b border-gray-200 px-6 py-5 md:flex-row md:items-center md:justify-between">
+              <div>
+                <h2 class="text-lg font-semibold text-gray-900">Daftar Pengguna</h2>
+              </div>
+              <div class="flex flex-col gap-3 sm:flex-row">
+                <input type="text" placeholder="Cari nama, email, atau NIP..." class="h-11 rounded-xl border border-gray-300 px-4 text-sm outline-none focus:border-blue-500 focus:ring-4 focus:ring-blue-100" />
+                <select class="h-11 rounded-xl border border-gray-300 px-4 text-sm outline-none focus:border-blue-500 focus:ring-4 focus:ring-blue-100">
+                  <option>Pusat Pengembangan & Penilaian Kompetensi</option>
+                  <option>Pusat Pelatihan</option>
+                  <option>Data & Sistem Informasi</option>
+                  <option>Umum / Pimpinan, Humas, & Protokol</option>
+                  <option>Umum / Rumah Tangga</option>
+                  <option>Umum / Keuangan</option>
+                  <option>Perencanaan & Kerja Sama</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="overflow-x-auto">
+              <table class="min-w-full divide-y divide-gray-200 text-sm">
+                <thead class="bg-gray-50">
+                  <tr>
+                    <th class="px-6 py-4 text-left font-semibold text-gray-600">Nama</th>
+                    <th class="px-6 py-4 text-left font-semibold text-gray-600">NIP / ID</th>
+                    <th class="px-6 py-4 text-left font-semibold text-gray-600">Divisi</th>
+                    <th class="px-6 py-4 text-left font-semibold text-gray-600">Kontak</th>
+                    <th class="px-6 py-4 text-left font-semibold text-gray-600">Login</th>
+                    <th class="px-6 py-4 text-left font-semibold text-gray-600">Aksi</th>
+                  </tr>
+                </thead>
+                <tbody class="divide-y divide-gray-100 bg-white">
+                  <tr>
+                    <td class="px-6 py-4"><div class="font-medium text-gray-900">Budi Santoso</div><div class="text-xs text-gray-500">budi.santoso@email.com</div></td>
+                    <td class="px-6 py-4 text-gray-600">PGW001</td>
+                    <td class="px-6 py-4"><span class="rounded-full bg-blue-50 px-3 py-1 text-xs font-medium text-blue-700">Pusat Pelatihan</span></td>
+                    <td class="px-6 py-4 text-gray-600">081234567890</td>
+                    <td class="px-6 py-4"><div class="text-gray-700">Remember me: Ya</div><div class="text-xs text-gray-500">Auto logout: 30 menit</div></td>
+                    <td class="px-6 py-4">
+                      <div class="flex gap-2">
+                        <button class="rounded-lg bg-amber-50 px-3 py-2 text-xs font-medium text-amber-700 hover:bg-amber-100">Edit</button>
+                        <button class="rounded-lg bg-red-50 px-3 py-2 text-xs font-medium text-red-700 hover:bg-red-100">Hapus</button>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="px-6 py-4"><div class="font-medium text-gray-900">Siti Aminah</div><div class="text-xs text-gray-500">siti.aminah@email.com</div></td>
+                    <td class="px-6 py-4 text-gray-600">PGW002</td>
+                    <td class="px-6 py-4"><span class="rounded-full bg-emerald-50 px-3 py-1 text-xs font-medium text-emerald-700">Keuangan</span></td>
+                    <td class="px-6 py-4 text-gray-600">081234567891</td>
+                    <td class="px-6 py-4"><div class="text-gray-700">Remember me: Ya</div><div class="text-xs text-gray-500">Auto logout: 30 menit</div></td>
+                    <td class="px-6 py-4">
+                      <div class="flex gap-2">
+                        <button class="rounded-lg bg-amber-50 px-3 py-2 text-xs font-medium text-amber-700 hover:bg-amber-100">Edit</button>
+                        <button class="rounded-lg bg-red-50 px-3 py-2 text-xs font-medium text-red-700 hover:bg-red-100">Hapus</button>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="px-6 py-4"><div class="font-medium text-gray-900">Ahmad Wijaya</div><div class="text-xs text-gray-500">ahmad.wijaya@email.com</div></td>
+                    <td class="px-6 py-4 text-gray-600">PGW003</td>
+                    <td class="px-6 py-4"><span class="rounded-full bg-violet-50 px-3 py-1 text-xs font-medium text-violet-700">Data & Sistem Informasi</span></td>
+                    <td class="px-6 py-4 text-gray-600">081234567892</td>
+                    <td class="px-6 py-4"><div class="text-gray-700">Remember me: Tidak</div><div class="text-xs text-gray-500">Auto logout: 30 menit</div></td>
+                    <td class="px-6 py-4">
+                      <div class="flex gap-2">
+                        <button class="rounded-lg bg-amber-50 px-3 py-2 text-xs font-medium text-amber-700 hover:bg-amber-100">Edit</button>
+                        <button class="rounded-lg bg-red-50 px-3 py-2 text-xs font-medium text-red-700 hover:bg-red-100">Hapus</button>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="px-6 py-4"><div class="font-medium text-gray-900">Dewi Kartika</div><div class="text-xs text-gray-500">dewi.kartika@email.com</div></td>
+                    <td class="px-6 py-4 text-gray-600">PGW004</td>
+                    <td class="px-6 py-4"><span class="rounded-full bg-orange-50 px-3 py-1 text-xs font-medium text-orange-700">Keuangan</span></td>
+                    <td class="px-6 py-4 text-gray-600">081234567893</td>
+                    <td class="px-6 py-4"><div class="text-gray-700">Remember me: Ya</div><div class="text-xs text-gray-500">Auto logout: 30 menit</div></td>
+                    <td class="px-6 py-4">
+                      <div class="flex gap-2">
+                        <button class="rounded-lg bg-amber-50 px-3 py-2 text-xs font-medium text-amber-700 hover:bg-amber-100">Edit</button>
+                        <button class="rounded-lg bg-red-50 px-3 py-2 text-xs font-medium text-red-700 hover:bg-red-100">Hapus</button>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </section>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>

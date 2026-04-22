@@ -8,7 +8,7 @@
             <div class="flex flex-col gap-2 mb-4 sm:flex-row sm:items-center sm:justify-between">
                 <div>
                     <h3 class="text-lg font-semibold text-gray-800 dark:text-white/90">
-                        Data Akun
+                        Data Barang
                     </h3>
                 </div>
                 <div class="flex items-center gap-3">
@@ -47,7 +47,7 @@
                                 <div class="flex items-center">
                                     <p
                                         class="font-medium text-gray-500 text-theme-xs dark:text-gray-400">
-                                        Nama
+                                        Nama Barang
                                     </p>
                                 </div>
                             </th>
@@ -55,7 +55,7 @@
                                 <div class="flex items-center">
                                     <p
                                         class="font-medium text-gray-500 text-theme-xs dark:text-gray-400">
-                                        NIP
+                                        Kode Barang
                                     </p>
                                 </div>
                             </th>
@@ -63,7 +63,7 @@
                                 <div class="flex items-center">
                                     <p
                                         class="font-medium text-gray-500 text-theme-xs dark:text-gray-400">
-                                        Divisi
+                                        Kategori Barang
                                     </p>
                                 </div>
                             </th>
@@ -71,7 +71,7 @@
                                 <div class="flex items-center">
                                     <p
                                         class="font-medium text-gray-500 text-theme-xs dark:text-gray-400">
-                                        Pengajuan
+                                        Jumlah Stok Barang
                                     </p>
                                 </div>
                             </th>
@@ -79,7 +79,7 @@
                                 <div class="flex items-center">
                                     <p
                                         class="font-medium text-gray-500 text-theme-xs dark:text-gray-400">
-                                        Aksi Akun
+                                        Status Persetujuan
                                     </p>
                                 </div>
                             </th>
@@ -92,13 +92,13 @@
                             <td class="px-5 py-4 sm:px-6">
                                 <div class="flex items-center">
                                     <div class="flex items-center gap-3">
-                                        <div class="w-10 h-10 overflow-hidden rounded-full">
+                                        <div class="w-30 h-30 overflow-hidden">
                                             <img src="https://picsum.photos/id/1/200/300" alt="brand" />
                                         </div>
 
                                         <div>
                                             <span
-                                                class="block font-medium text-gray-800 text-theme-sm dark:text-white/90">
+                                                class="font-medium text-gray-800 text-theme-sm dark:text-white/90">
                                                 Lindsey Curtis
                                             </span>
                                             <span
@@ -120,16 +120,13 @@
                                 <div class="flex items-center">
                                     <p
                                         class="rounded-full bg-success-50 px-2 py-0.5 text-theme-xs font-medium text-success-700 dark:bg-success-500/15 dark:text-success-500">
-                                        User
+                                        Active
                                     </p>
                                 </div>
                             </td>
                             <td class="px-5 py-4 sm:px-6">
                                 <div class="flex items-center">
-                                    <button
-                                        class="inline-flex items-center justify-center rounded-lg bg-blue-500 px-4 py-2.5 text-sm font-medium text-white hover:bg-blue-600">
-                                        Detail
-                                    </button>
+                                    <p class="text-gray-500 text-theme-sm dark:text-gray-400">3.9K</p>
                                 </div>
                             </td>
                             <td class="px-5 py-4 sm:px-6">

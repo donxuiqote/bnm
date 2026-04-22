@@ -5,26 +5,23 @@
 
     <div class="col-span-12 space-y-6 xl:col-span-7">
 
-        @include('dashboard.partials.metric-group.metric-group-01')
+        @include('user.partials.metric-group.metric-group-01')
 
-        @include('dashboard.partials.chart.chart-01')
+        @include('user.partials.chart.chart-01')
     </div>
 
     <div class="col-span-12 xl:col-span-5">
-        @include('dashboard.partials.chart.chart-02')
+        @include('user.partials.chart.chart-02')
     </div>
 
     <div class="col-span-12">
-        @include('dashboard.partials.chart.chart-03')
+        @include('user.partials.chart.chart-03')
     </div>
 
     <div class="col-span-12 xl:col-span-5">
-        @include('dashboard.partials.map-01')
+        @include('user.partials.map-01')
     </div>
 
-    <div class="col-span-12 xl:col-span-7">
-        @include('dashboard.partials.table.table-01')
-    </div>
 
 </div>
 

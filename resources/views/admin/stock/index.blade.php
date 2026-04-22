@@ -75,6 +75,14 @@
                                     </p>
                                 </div>
                             </th>
+                            <th class="px-5 py-3 sm:px-6">
+                                <div class="flex items-center">
+                                    <p
+                                        class="font-medium text-gray-500 text-theme-xs dark:text-gray-400">
+                                        Aksi
+                                    </p>
+                                </div>
+                            </th>
                         </tr>
                     </thead>
                     <!-- table header end -->
@@ -116,11 +124,20 @@
                                     </p>
                                 </div>
                             </td>
-                            <td class="px-5 py-4 sm:px-6">
-                                <div class="flex items-center">
-                                    <p class="text-gray-500 text-theme-sm dark:text-gray-400">3.9K</p>
-                                </div>
-                            </td>
+                                <td class="px-5 py-4 sm:px-6">
+                                    <div class="flex items-center">
+                                        <p class="text-gray-500 text-theme-sm dark:text-gray-400">3.9K</p>
+                                    </div>
+                                </td>
+                                <td class="px-5 py-4 sm:px-6">
+                                    <div class="flex items-center">
+                                        <button
+                                            class="inline-flex items-center justify-center rounded-lg bg-blue-500 px-4 py-2.5 text-sm font-medium text-white hover:bg-blue-600">
+                                            Edit
+                                        </button>
+                                    </div>
+                                </td>
+
                         </tr>
                     </tbody>
                 </table>
