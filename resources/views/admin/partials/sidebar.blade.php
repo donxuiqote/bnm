@@ -54,7 +54,7 @@
 
         <ul class="flex flex-col gap-4 mb-6">
           <li>
-            <a href="/"
+            <a href="/admin"
               @click="selected = (selected === 'Calendar' ? '':'Calendar')"
               class="menu-item group"
               :class=" (selected === 'Calendar') && (page === 'calendar') ? 'menu-item-active' : 'menu-item-inactive'">
