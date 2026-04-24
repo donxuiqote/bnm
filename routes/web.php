@@ -20,7 +20,11 @@ Route::get('/admin', function () {
     return view('admin.index');
 });
 
-Route::get('/admin/stock', function () {
+Route::get('/admin/pengajuan', function () {
+    return view('admin.pengajuan.index');
+});
+
+Route::get('/admin/stock/', function () {
     return view('admin.stock.index');
 });
 
@@ -28,13 +32,6 @@ Route::get('/admin/stock/edit', function () {
     return view('admin.stock.edit');
 });
 
-Route::get('/admin/pengajuan', function () {
-    return view('admin.pengajuan.index');
-});
-
-Route::get('/admin/stock/edit', function () {
-    return view('admin.pengajuan.edit');
-});
 
 Route::get('/admin/pengadaan', function () {
     return view('admin.pengadaan.index');

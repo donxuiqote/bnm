@@ -1,4 +1,4 @@
-@extends('layouts.dashboard')
+@extends('layouts.admin')
 @section('content')
 
 <div class="grid grid-cols-12 gap-4 md:gap-6">
@@ -124,19 +124,24 @@
                                     </p>
                                 </div>
                             </td>
-                                <td class="px-5 py-4 sm:px-6">
-                                    <div class="flex items-center">
-                                        <p class="text-gray-500 text-theme-sm dark:text-gray-400">3.9K</p>
-                                    </div>
-                                </td>
-                                <td class="px-5 py-4 sm:px-6">
-                                    <div class="flex items-center">
-                                        <button
-                                            class="inline-flex items-center justify-center rounded-lg bg-blue-500 px-4 py-2.5 text-sm font-medium text-white hover:bg-blue-600">
-                                            Edit
-                                        </button>
-                                    </div>
-                                </td>
+                            <td class="px-5 py-4 sm:px-6">
+                                <div class="flex items-center">
+                                    <p class="text-gray-500 text-theme-sm dark:text-gray-400">3.9K</p>
+                                </div>
+                            </td>
+                            <td class="px-5 py-4 sm:px-6">
+                                <div class="flex items-center">
+                                    <a href="{{ url('admin/stock/edit') }}"
+                                        class="inline-flex items-center justify-center rounded-lg bg-blue-500 px-4 py-2.5 text-sm font-medium text-white hover:bg-blue-600">
+                                        Edit
+                                    </a>
+
+                                    <a href="#"
+                                        class="inline-flex items-center justify-center rounded-lg bg-red-500 px-4 py-2.5 text-sm font-medium text-white hover:bg-red-600">
+                                        Hapus
+                                    </a>
+                                </div>
+                            </td>
 
                         </tr>
                     </tbody>

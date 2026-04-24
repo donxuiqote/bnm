@@ -1,4 +1,4 @@
-@extends('layouts.dashboard')
+@extends('layouts.admin')
 @section('content')
 <!-- ===== Page Wrapper Start ===== -->
 <div class="flex h-screen">
